@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const resultsRouter = require('./results-router');
 
-mongoose.connect('mongodb://rs-game-user:rs2018q3@ds026658.mlab.com:26658/rs-game')
+mongoose.connect(process.env.MONGODB_URI)
 
 const app = express();
 
